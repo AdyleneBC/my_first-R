@@ -1,7 +1,9 @@
 ---
 title: "ACTIVIDAD: COVID EN MÉXICO"
+author: "Adylene Baylon"
 output:
   html_document: 
+  github_document:
 date: "2024-02-05"
 ---
 
@@ -13,24 +15,27 @@ library(tidyverse)
 
 casos <- coronavirus::coronavirus
 ```
+## De epidemia a pandemia
+
+![Imagen ilustrativa de coronavirus](imgs/COVID.jpg){width="50%"}
 
 ## Antecedentes
 
-Se empieza definiendo un poco de contexto en 3 párrafos:
 
-* ¿Qué es el COVID19? Es un virus, causado por el SARS-CoV-2. Se transmite por vía aerea y causa diversos síntomas: tos, fiebre, dolor de cabeza, entre otros. 
 
-* ¿Cuál fue la situación en México entre 2020 y 2022? Cuándo se tuvieron los primeros contagios registrados en México, las autoridades correspondientes comenzarona a actuar para que no se propagara el virus, sin embargo, todo se salió de control, y no solo en el país, sino que en todo el mundo, así que de manera descontrolada hubo muertes de niños como adultos. 
+* <span style="color:#138D75; font-family:Arial Black;">¿Qué es el COVID19?</span> Es un virus, causado por el SARS-CoV-2. Se transmite por vía aerea y causa diversos síntomas: tos, fiebre, dolor de cabeza, entre otros. 
 
-* ¿Cuál es el contexto de los datos que estamos usando? Se recomienda revisar el github del autor del paquete [https://github.com/RamiKrispin/coronavirus] para acceder a los detalles de los datos. También se puede probar con ??coronavirus en RStudio.
+* <span style="color:#138D75; font-family:Arial Black;">¿Cuál fue la situación en México entre 2020 y 2022?</span> Cuándo se tuvieron los primeros contagios registrados en México, las autoridades correspondientes comenzarona a actuar para que no se propagara el virus, sin embargo, todo se salió de control, y no solo en el país, sino que en todo el mundo, así que de manera descontrolada hubo muertes de niños como adultos. 
+
+* <span style="color:#138D75; font-family:Arial Black;">¿Cuál es el contexto de los datos que estamos usando?</span> Se recomienda revisar el github del autor del paquete [https://github.com/RamiKrispin/coronavirus] para acceder a los detalles de los datos. También se puede probar con ??coronavirus en RStudio.
 
 ## Materiales y métodos
 
-Se empieza por citar la fuente de los datos:
+Citas:
 
 * Se recomienda revisar el github del autor del paquete [https://github.com/RamiKrispin/coronavirus] para acceder a los detalles de los datos. También se puede probar con ??coronavirus en RStudio.
 
-Escribir un párrafo para definir las ecuaciones usadas para medir el impacto de una enfermedad:
+Para medir el impacto de una enfermedad:
 
 * $TasaDeIncidencia = NuevosCasos / Población \times 100,000$
 
